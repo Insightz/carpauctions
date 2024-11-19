@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-purple-600 hover:bg-purple-700 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-700 hover:bg-gray-600 text-white;
+  }
+
+  .card {
+    @apply bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700;
+  }
+
+  .input {
+    @apply bg-gray-700 border border-gray-600 rounded-lg px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #2D1B69 0%, #1E1B26 100%);
+}
+
+/* Supabase Auth UI Customization */
+.supabase-container {
+  width: 100% !important;
+}
+
+.supabase-auth-ui_ui-divider {
+  @apply border-gray-700 !important;
+}
+
+.supabase-auth-ui_ui-button {
+  @apply bg-purple-600 hover:bg-purple-700 !important;
+}
+
+.supabase-auth-ui_ui-input {
+  @apply bg-gray-700 border-gray-600 text-white !important;
+}
